@@ -24,7 +24,23 @@ class BusinessSearch {
 			//add record to the collection
 			Biz.add(new BusinessRecord(ar[0], ar[1]));	
 		}
-		/*Sort*/
+		/*Sort!!!!*/
+	
+		/*Ask user for business name*/
+		Scanner console = new Scanner (System.in);
+		System.out.println("What business are you searching for?");
+		while(console.hasNextLine()){
+			String BizName = console.nextLine();
+			if(BusinessSearch == true){
+				/*print phone number of biz!!!!*/
+			}
+			else{
+				System.out.println("NOT FOUND");
+			}
+			
+		}
+		/*Search through BusinessRecord array for nameUrBiz*/
+		
 		
 	} 
 	catch (FileNotFoundException e){
