@@ -44,8 +44,10 @@ class BusinessSearch {
 		
 			BusinessRecord brSearch = new BusinessRecord(console.nextLine(),null);
 			int index = Collections.binarySearch(Biz, brSearch, new BizComp());
-			if (index==0) {
+			if (index>=0) {
 				System.out.println("Company Phone Number is: "+ Biz.get(index).BizNumber);
+				System.out.println("Good bye!");
+				System.exit(0);
 			}
 			else {
 				System.out.println("Company not found. Good bye!"); 
@@ -83,8 +85,8 @@ class BusinessSearch {
 	            right.add(list.get(x));
 	        }
 
-	        System.out.println("Left Array: " + left);
-	        System.out.println("Right Array)" + right);
+	        //System.out.println("Left Array: " + left);
+	        //System.out.println("Right Array)" + right);
 
 	        left=mergeSort(left);
 	        right=mergeSort(right);
