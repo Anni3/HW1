@@ -9,4 +9,12 @@ public class BusinessRecord {
 	}
 		String BizName;
 		String BizNumber;
+		public String getName() {
+			// TODO Auto-generated method stub
+			return BizName;
+		}
+		public int compareTo(BusinessRecord businessRecord) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 }
