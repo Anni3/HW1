@@ -18,16 +18,14 @@ class BusinessSearch {
 		/*load businesses into array Biz*/
 		int x=0;
 		while (x<numOfBiz){
-			BusinessRecord tempBiz = new BusinessRecord();
 			String line = fileInput.nextLine();
 			String [] ar = line.split(",");
-			tempBiz.BizName= ar[0];
-			tempBiz.BizNumber=ar[1];
-			
+
 			//add record to the collection
-			Biz.add(tempBiz);	
+			Biz.add(new BusinessRecord(ar[0], ar[1]));	
 		}
 		/*Sort*/
+		
 	} 
 	catch (FileNotFoundException e){
 		System.out.println("FILE NOT FOUND");
